@@ -1,5 +1,5 @@
 {
-	"name": "MTG - All you need",
+	"name": "MTG Toolkit",
 	"description": "A Magic The Gathering life counter, card searcher, mechanics explainer and much more.",
 	"launch_path": "/splashcreen.html",
 	"developer": {
@@ -15,5 +15,12 @@
 	"fullscreen": "true",
 	"default_locale": "pt-BR",
 	"orientation": ["portrait", "landscape-secondary"],
-	"version": "1.0"
+	"type": "privileged",
+	"permissions": {
+	    "systemXHR": {
+	      "description": "Request card information from web service"
+	    }
+	  },
+	  "installs_allowed_from": ["*"],
+	  "version": "1.0"
 }
