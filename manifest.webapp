@@ -1,0 +1,19 @@
+{
+	"name": "MTG - All you need",
+	"description": "A Magic The Gathering life counter, card searcher, mechanics explainer and much more.",
+	"launch_path": "/splashcreen.html",
+	"developer": {
+		"name": "Marcus Saad",
+		"url": "http://marcussaad.com"
+	},
+	"icons": {
+		"30": "/images/icons/icon30.png",
+		"60": "/images/icons/icon60.png",
+		"90": "/images/icons/icon90.png",
+		"128": "/images/icons/icon128.png"
+	},
+	"fullscreen": "true",
+	"default_locale": "pt-BR",
+	"orientation": ["portrait", "landscape-secondary"],
+	"version": "1.0"
+}
