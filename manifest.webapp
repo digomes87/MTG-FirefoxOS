@@ -1,7 +1,7 @@
 {
 	"name": "MTG Toolkit",
 	"description": "A Magic The Gathering life counter, card searcher, mechanics explainer and much more.",
-	"launch_path": "/splashcreen.html",
+	"launch_path": "/splashscreen.html",
 	"developer": {
 		"name": "Marcus Saad",
 		"url": "http://marcussaad.com"
