@@ -2,17 +2,19 @@
 font-family: 'magic';
 src: url('../fonts/magic.ttf?') format('truetype');
 }
-
-.content{
-    width: 1600px;
-    height: 480px;
-    position: absolute;
-    margin: 8px 0px 0px -8px;
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#content{
+    height: 100%;
 }
 .backgroundSplash{
     height: 100%;
     width: 320px;
-    margin: -8px 0px 0px -8px;
     background: url('../../images/background.jpg') 0 0 no-repeat;
     position: absolute;
     font-family: magic, sans-serif;
