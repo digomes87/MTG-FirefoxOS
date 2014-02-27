@@ -67,7 +67,6 @@ function initiate(){
 
 function showMenu(){
   setInterval(function(){
-    this.ModeManager.pop(MODE_SPLASH);
     this.ModeManager.push(MODE_MENU);
   },3000);
 }
