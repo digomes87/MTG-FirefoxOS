@@ -61,6 +61,13 @@ var ModeManager = {
 };
 
 
-function animateMenu(){
-	this.ModeManager.start(1);
+function initiate(){
+	this.ModeManager.start(MODE_SPLASH, showMenu());
+}
+
+function showMenu(){
+  setInterval(function(){
+    this.ModeManager.pop(MODE_SPLASH);
+    this.ModeManager.push(MODE_MENU);
+  },3000);
 }

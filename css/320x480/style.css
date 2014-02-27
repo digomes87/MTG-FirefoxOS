@@ -24,7 +24,7 @@ body {
 
 .view {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .hidden {
@@ -46,6 +46,7 @@ body {
 
 #views-menu {
   left: 100%;
+  background: url("../../images/background-menu.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 #views-counter {
@@ -61,27 +62,27 @@ body {
   height: 100%;
 }
 
-body#view-splash {
+#views #views-splash {
   width: 100%;
   transform: translateX(0%);
 }
 
-body#view-menu {
+#views #views-menu {
   width: 100%;
   transform: translateX(-100%);
 }
 
-body#view-counter {
+#views #views-counter {
   width: 100%;
   transform: translateX(-200%);
 }
 
-body#view-search {
+#views #views-search {
   width: 100%;
   transform: translateX(-300%);
 }
 
-body#view-mechanics {
+#views #views-mechanics {
   width: 100%;
   transform: translateX(-400%);
 }
