@@ -19,7 +19,6 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: black;
 }
 
 .view {
@@ -65,11 +64,14 @@ body {
 #views #views-splash {
   width: 100%;
   transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  
 }
 
 #views #views-menu {
   width: 100%;
   transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
 }
 
 #views #views-counter {
