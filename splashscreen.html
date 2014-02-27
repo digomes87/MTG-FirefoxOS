@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- CSS media query on a link element -->
-        <link rel="stylesheet"  href="css/320x480/style.css" />
-        <script>
-            window.onload = function(){
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>MTG - Toolkit</title>
+    <!-- Our CSS -->
+    <link rel="stylesheet"  href="css/320x480/style.css" />
+    <!-- Our JS -->
+    <script defer src="js/jquery-1.10.2.min.js"></script>
+    <script defer src="js/mtg.js"></script>
+  </head>
+  <body role="application" onload="animateMenu()">
+     <div id="views">
+        <div id="views-splash" class="view hidden">
                 
-            };
-        </script>
-    </head>
-    <body>
-            <div id="view-splash">
-                
-            </div>
-            <div id="view-menu">
-                div2
-            </div>
-            <div id="view-search">
-                div3
-            </div>
-            <div id="view-mechanics">
-                div4
-            </div>
-    </body>
-</html>
+        </div>
+        <div id="views-menu" class="view hidden">
+            
+        </div>
+        <div id="views-counter" class="view hidden">
+            
+        </div>
+        <div id="views-search" class="view hidden">
+            
+        </div>
+        <div id="views-mechanics" class="view hidden">
+            
+        </div>
+     </div>
+  </body>
+</html> 
