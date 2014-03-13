@@ -1,10 +1,9 @@
-// This Application has five modes: TILES, SEARCH, LIST, SUBLIST, and PLAYER
-// Search has two "modes", depending on whether we came from TILES or LIST.
+// This Application has five modes: SPLASH, MENU, COUNTER, SEARCH, and MECHANICS
 //
-// Before the Music app is launched we use display: none to hide the modes so
-// that Gecko will not try to apply CSS styles on those elements which seems are
-// actions that slows down the startup time we will remove display: none on
-// elements when we need to display them.
+// Before the app is launched we use display: none to hide the modes so
+// that Gecko will not try to apply CSS styles on those elements.
+// We will remove display: none on elements when we need to display them.
+
 var MODE_SPLASH = 1;
 var MODE_MENU = 2;
 var MODE_COUNTER = 3;
@@ -37,23 +36,38 @@ var ModeManager = {
 
   _updateMode: function(callback) {
     var mode = this.currentMode;
+    var views_splash    = $('#views-splash');
+    var views_menu      = $('#views-menu');
+    var views_counter   = $('#views-counter');
+    var views_search    = $('#views-search');
+    var views_mechanics = $('#views-mechanics');
 
-    if (mode === MODE_SPLASH) {
-      document.getElementById('views-splash').classList.remove('hidden');
+    switch (mode) {
+
+      case MODE_SPLASH :
+        views_splash.removeClass('hidden');
+        break;
+
+      case MODE_MENU :
+        views_menu.removeClass('hidden');
+        views_menu.addClass('slidetoleft');
+        break;
+
+      case MODE_COUNTER :
+        views_counter.removeClass('hidden');
+        break;
+      
+      case MODE_SEARCH :
+        views_search.removeClass('hidden');
+        break;
+
+      case MODE_MECHANICS :
+        views_mechanics.removeClass('hidden');
+        break;
+
+      default :
+        return;
     }
-    else {
-    	if (mode === MODE_MENU)
-        	document.getElementById('views-menu').classList.remove('hidden');
-      	else 
-      	 	if (mode === MODE_COUNTER)
-           		document.getElementById('views-counter').classList.remove('hidden');
-      	    else
-      	        if (mode === MODE_SEARCH) 
-        		    document.getElementById('views-search').classList.remove('hidden');
-        			else
-        				if(mode === MODE_MECHANICS)
-        					document.getElementById('views-mechanics').classList.remove('hidden');
-	}
 
     if (callback)
         callback();

@@ -1,7 +1,29 @@
+
+@keyframes currentToLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes rightToCurrent {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes leftToCurrent {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes currentToRight {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
 @font-face {
 font-family: 'magic';
 src: url('../fonts/magic.ttf?') format('truetype');
 }
+
 
 html {
   height: 100%;
@@ -89,3 +111,18 @@ body {
   transform: translateX(-400%);
 }
 
+.slidetoleft {
+  animation: currentToLeft 1s forwards;
+}
+
+.slidetoright {
+  animation: currentToRight 0.4s forwards;
+}
+
+.slidefromleft {
+  animation: leftToCurrent 0.4s forwards;
+}
+
+.slidefromright {
+  animation: rightToCurrent 0.4s forwards;
+}
